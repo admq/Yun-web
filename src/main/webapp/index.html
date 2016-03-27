@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="res/common/public.css" rel="stylesheet" />
+    <script src="res/common/public.js"></script>
+    <title>主页</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo left"><a href="#">Yun</a></div>
+        <div class="item left"><a href="#">我的文件</a></div>
+        <div class="item right"><a href="#">注销</a></div>
+    </div>
+    <div class="frame">
+        <div class="frame-left">
+            <div class="module">
+                <ul>
+                    <li>我的推荐</li>
+                </ul>
+                <div class="item-separator"></div>
+                <ul>
+                    <li data="all">全部</li>
+                    <li data="pic">图片</li>
+                    <li data="doc">文档</li>
+                    <li data="music">音乐</li>
+                    <li data="video">视频</li>
+                    <li data="other">其他</li>
+                </ul>
+                <div class="item-separator"></div>
+                <ul>
+                    <li>我的分享</li>
+                </ul>
+                <div class="item-separator"></div>
+                <ul>
+                    <li>回收站</li>
+                </ul>
+            </div>
+        </div>
+        <div class="frame-right">
+            <div class="toolbar">
+                <span id="upload" onclick="P.modal('uploadModal')">上传文件</span>
+                <span id="folder">新建文件夹</span>
+                <span id="remove">删除文件</span>
+                <span id="rename">重命名</span>
+            </div>
+
+            <!--<input type="checkbox" name="select_file"/>-->
+            <div class="file_content">
+                <ul id="uh">
+                    <li class="file_name">文件名</li>
+                    <li class="file_size center_border">大小</li>
+                    <li class="file_touch">修改时间</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+                <ul>
+                    <li class="file_name"><a href="#">HHHH</a></li>
+                    <li class="file_size">HHHH</li>
+                    <li class="file_touch">HHHH</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- upload modal -->
+    <div id="uploadModal">
+        <div class="uploadModel_title">
+            上传文件
+            <div class="close right" onclick="P.closeModal('uploadModal')">x</div>
+            <form action="fileSystemController/upload.do" method="post" enctype="multipart/form-data">
+                <input type="file" name="file"/>
+                <br>
+                分类: <input type="text" name="title"/>
+                <br>
+                <!--概述: <textarea name="summary"></textarea>
+                <br>-->
+                <input type="submit" value="上传"/>
+            </form>
+        </div>
+    </div>
+    <div id="shade"></div>
+<script>
+
+
+</script>
+</body>
+</html>
