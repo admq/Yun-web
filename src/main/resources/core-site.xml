@@ -24,6 +24,6 @@
     </property>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://master:9000</value>
+        <value>hdfs://master:9000</value> <!-- master为主节点的ip地址 -->
     </property>
 </configuration>
